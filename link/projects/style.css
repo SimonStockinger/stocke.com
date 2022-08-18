@@ -1,0 +1,124 @@
+/*Globale Settings*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/*Splash Screen */
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ff7abc;
+}
+
+.logo{
+    font-size: 150%;
+    position: relative; /*"relertive to the parent"*/
+    display: inline-block; /*"um animations zu machen"*/
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+.nav-links{
+    color:crimson;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    border: #161616;
+}
+
+/*
+.text{
+
+    margin: 20px 30px;
+
+    color: aqua;
+    text-align: center;
+    font-size: 500%;
+    font-weight: 800;
+    font-family:'Roboto', sans-serif;
+
+    border-width: 5px;
+    border-style:solid;
+    border-color: black;
+
+    position: absolute;
+	top: 50px; right: 70px;
+
+    height: 50%;
+	width: 70%;
+
+    overflow: auto;
+}
+*/
+    
+.unterschrift{
+    height: 10%;
+    width: 10%;
+    image-rendering: auto;
+
+    position:fixed;
+    top: 50px; left: 50px;
+}
+
+.unterschrift:hover{
+    border-width: 2px;
+    border-style:double;
+    border-color: black;
+}
+
+a:active{
+    color:lawngreen;
+}
+
+.test{
+    color: yellowgreen;
+}
+
+
+
+.maDick{
+    color: darkmagenta;
+}
