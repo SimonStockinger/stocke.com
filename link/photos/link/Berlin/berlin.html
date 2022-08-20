@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="test" content="with=device-width, initial-scale=1.0">
+    <title>Simon Stockinger</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Ber </span><span class="logo">lyyyyn</span>
+        </h1>
+    </div>
+
+    
+    <div class="gallery">
+        <ul>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 08.16.24.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 20.57.53.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/1.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/2.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/3.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/4.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 20.57.52 (1).jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 20.57.54.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 21.00.02 (1).jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 21.00.02.jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 20.57.52 (3).jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/WhatsApp Image 2022-07-27 at 20.57.52 (2).jpeg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/MitMichi.jpg" onclick="openFullImg(this.src)"></li>
+            <li><img src="Berlin/IchAberWeißbier.png" onclick="openFullImg(this.src)"></li>
+        </ul>
+    </div>
+
+    <div class="fullImg" id="fullImgBox">
+        <img src="" id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+
+    <footer>
+        <section class="header">
+            <nav class="test">
+                <a href="file:///E:/Websites/SimonStockinger/index.html"><img src="images/websiteDesign/U1Blck.png Unterschrtdijsfiosdjfods" class="unterschrift"></a>
+                <div class="nav-links"> 
+                    <ul>
+                        <li><a href="subSites/About Me/index.html">About Me</a></li>
+                        <li><a href="subSites/Career/index.html">Career</a></li>
+                        <li><a href="file:///E:/Websites/SimonStockinger/subSites/art/index.html">Art</a></li>
+                        <li><a href="subSites/Music/index.html">Music</a></li>
+                        <li><a href="subSites/Contact and Social Media/index.html">Contact and Social Media</a></li>       
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </footer>
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+        }
+    </script>
+    <script src="script.js"></script>
+
+    <section class="showcase">
+        <video src="websiteDesign/fhd-0250.mp4" muted loop autoplay></video>        
+    </section>
+
+
+
+</body>
+</html>
