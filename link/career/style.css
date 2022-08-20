@@ -1,10 +1,9 @@
-/*Globale Settings*/
+
 *{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-
 header{
     position: relative;
     left: 0;
@@ -19,7 +18,7 @@ header h4{
     font-size: 1.6rem;
 }
 
-/*Splash Screen */
+
 .intro{
     position: fixed;
     z-index: 1;
@@ -41,8 +40,8 @@ header h4{
 
 .logo{
     font-size: 150%;
-    position: relative; /*"relertive to the parent"*/
-    display: inline-block; /*"um animations zu machen"*/
+    position: relative;
+    display: inline-block;
     bottom: -20px;
     opacity: 0;
 }
@@ -74,58 +73,4 @@ header h4{
     text-align: right;
     font-size: 20px;
     font-weight: 400;
-}
-
-/*
-.text{
-
-    margin: 20px 30px;
-
-    color: aqua;
-    text-align: center;
-    font-size: 500%;
-    font-weight: 800;
-    font-family:'Roboto', sans-serif;
-
-    border-width: 5px;
-    border-style:solid;
-    border-color: black;
-
-    position: absolute;
-	top: 50px; right: 70px;
-
-    height: 50%;
-	width: 70%;
-
-    overflow: auto;
-}
-*/
-    
-.unterschrift{
-    height: 10%;
-    width: 10%;
-    image-rendering: auto;
-
-    position:fixed;
-    top: 50px; left: 50px;
-}
-
-.unterschrift:hover{
-    border-width: 2px;
-    border-style:double;
-    border-color: black;
-}
-
-a:active{
-    color:lawngreen;
-}
-
-.test{
-    color: yellowgreen;
-}
-
-
-
-.maDick{
-    color: darkmagenta;
 }

@@ -1,0 +1,189 @@
+/*Globale Settings*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #ff7abc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position:relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color:#fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side{
+    position:relative;
+    background:rgb(41, 41, 41);
+    padding: 40px;
+}
+
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #ffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.contactInfo h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer; /*das ändern damit Finger-Hover-Effekt weggeht*/
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #23e5e7;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+
+.container .right_side{
+    position:relative;
+    background:rgb(160, 160, 160);
+    padding: 40px;
+}
+
+.language{
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+.language img{
+    position: relative;
+    width: 10%;
+    height: 10%;
+}
+
+
+
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/*Splash Screen */
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #23e5e7;
+}
+
+.logo{
+    font-size: 150%;
+    position: relative; /*"relertive to the parent"*/
+    display: inline-block; /*"um animations zu machen"*/
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/websiteDesign/Blue-Pink.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+

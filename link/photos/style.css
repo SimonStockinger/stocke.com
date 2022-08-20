@@ -5,6 +5,68 @@
     font-family: "Poppins", sans-serif;
 }
 
+.showcase video{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.gallery ul{
+   
+    list-style: none;
+    width: 80%;
+    margin: 50px auto 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    grid-gap: 20px;
+}
+
+.gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.gallery img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.fullImg{
+    width: 100%;
+    height: 100vh;
+    background:rgb(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullImg img{
+    width: 100%; 
+    max-width: 50%;
+}
+
+.fullImg span{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 40px;
+    color: #ff7abc;
+    cursor: pointer;
+}
+
+
+
+
+
 header{
     position: relative;
     left: 0;
